@@ -27,7 +27,10 @@ namespace LoggingMiddleware_geh_Demo
                 app.UseSwaggerUI();
             }
 
-            LoggingMiddleware.LoggingMiddleware.enableTrace(true);
+            // Setting enableTraceBody, enableTraceHeaders, enableTraceQueryString is optional
+            LoggingMiddleware.LoggingMiddleware.enableTraceBody(true);
+            LoggingMiddleware.LoggingMiddleware.enableTraceHeaders(true);
+            LoggingMiddleware.LoggingMiddleware.enableTraceQueryString(true);
             app.UseLoggingMiddleware();
 
             app.UseHttpsRedirection();
