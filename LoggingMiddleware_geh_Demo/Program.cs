@@ -1,5 +1,4 @@
 using LoggingMiddleware_geh;
-using NLog;
 
 namespace LoggingMiddleware_geh_Demo
 {
@@ -8,7 +7,7 @@ namespace LoggingMiddleware_geh_Demo
         public static void Main(string[] args)
         {
             LoggingMiddleware_geh.LoggingMiddleware_geh.init("nlog.config");
-            Logger log = LoggingMiddleware_geh.LoggingMiddleware_geh.getLoger();
+            LMLogger log = LoggingMiddleware_geh.LoggingMiddleware_geh.getLogger();
 
             var builder = WebApplication.CreateBuilder(args);
 
