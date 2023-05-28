@@ -1,4 +1,4 @@
-using LoggingMiddleware;
+using LoggingMiddleware_geh;
 using NLog;
 
 namespace LoggingMiddleware_geh_Demo
@@ -7,8 +7,8 @@ namespace LoggingMiddleware_geh_Demo
     {
         public static void Main(string[] args)
         {
-            LoggingMiddleware.LoggingMiddleware.init("nlog.config");
-            Logger log = LoggingMiddleware.LoggingMiddleware.getLoger();
+            LoggingMiddleware_geh.LoggingMiddleware_geh.init("nlog.config");
+            Logger log = LoggingMiddleware_geh.LoggingMiddleware_geh.getLoger();
 
             var builder = WebApplication.CreateBuilder(args);
 
@@ -28,9 +28,9 @@ namespace LoggingMiddleware_geh_Demo
             }
 
             // Setting enableTraceBody, enableTraceHeaders, enableTraceQueryString is optional
-            LoggingMiddleware.LoggingMiddleware.enableTraceBody(true);
-            LoggingMiddleware.LoggingMiddleware.enableTraceHeaders(true);
-            LoggingMiddleware.LoggingMiddleware.enableTraceQueryString(true);
+            LoggingMiddleware_geh.LoggingMiddleware_geh.enableTraceBody(true);
+            LoggingMiddleware_geh.LoggingMiddleware_geh.enableTraceHeaders(true);
+            LoggingMiddleware_geh.LoggingMiddleware_geh.enableTraceQueryString(true);
             app.UseLoggingMiddleware();
 
             app.UseHttpsRedirection();

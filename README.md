@@ -2,7 +2,8 @@
 
 ## Description
 
-This is a Project to show the usage of LoggingMiddleware_geh
+This is a Project that demostrates the usage of
+[LoggingMiddleware_geh](https://github.com/geh24/LoggingMiddleware_geh)
 
-GH1
+
 

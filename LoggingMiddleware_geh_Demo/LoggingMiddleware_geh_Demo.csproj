@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LoggingMiddleware_geh" Version="0.7.6" />
+    <PackageReference Include="LoggingMiddleware_geh" Version="0.7.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
