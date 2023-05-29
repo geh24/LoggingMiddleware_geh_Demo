@@ -42,10 +42,10 @@ namespace LoggingMiddleware_geh_Demo
                 log.Info("shutdown main");
             } catch (Exception e) {
                 //NLog: catch setup errors
-                log.Error(e, "Stopped program because of exception");
+                log.Error("Stopped program because of exception", e);
                 throw;
             } finally {
-                NLog.LogManager.Shutdown();
+//                NLog.LogManager.Shutdown();
             }
         }
     }
