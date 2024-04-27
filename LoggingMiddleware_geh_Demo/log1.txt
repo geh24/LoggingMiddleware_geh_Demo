@@ -1,0 +1,17 @@
+2023-05-29 17:16:47.960 +02:00 [INF] init main
+2023-05-29 17:17:03.286 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:00000009|/WeatherForecast|Request|||||||
+2023-05-29 17:17:03.321 +02:00 [WRN] WF#1
+2023-05-29 17:17:03.352 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:00000009|/WeatherForecast|Response|200|501|51|application/json; charset=utf-8
+2023-05-29 17:17:45.032 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:0000000B|/WeatherForecast|Request|||||||
+2023-05-29 17:17:45.044 +02:00 [WRN] WF#1
+2023-05-29 17:17:45.051 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:0000000B|/WeatherForecast|Response|200|496|18|application/json; charset=utf-8
+2023-05-29 17:17:45.716 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:0000000D|/WeatherForecast|Request|||||||
+2023-05-29 17:17:45.721 +02:00 [WRN] WF#1
+2023-05-29 17:17:45.728 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:0000000D|/WeatherForecast|Response|200|506|11|application/json; charset=utf-8
+2023-05-29 17:17:46.267 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:0000000F|/WeatherForecast|Request|||||||
+2023-05-29 17:17:46.272 +02:00 [WRN] WF#1
+2023-05-29 17:17:46.278 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:0000000F|/WeatherForecast|Response|200|512|10|application/json; charset=utf-8
+2023-05-29 17:17:46.816 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:00000011|/WeatherForecast|Request|||||||
+2023-05-29 17:17:46.820 +02:00 [WRN] WF#1
+2023-05-29 17:17:46.826 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:00000011|/WeatherForecast|Response|200|502|10|application/json; charset=utf-8
+2023-05-29 17:18:13.300 +02:00 [INF] ::1|localhost:7131|GET|0HMR0AUSFL3UO:00000013|/WeatherForecast|Request|||||||

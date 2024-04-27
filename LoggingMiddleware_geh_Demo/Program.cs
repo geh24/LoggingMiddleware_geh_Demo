@@ -6,10 +6,7 @@ namespace LoggingMiddleware_geh_Demo
     {
         public static void Main(string[] args)
         {
-            var config = new ConfigurationBuilder()
-                       .AddJsonFile("appsettings.json")
-                       .Build();
-            LoggingMiddleware_geh.LoggingMiddleware_geh.init(config);
+            LoggingMiddleware_geh.LoggingMiddleware_geh.init("nlog.config");
             LMLogger log = LoggingMiddleware_geh.LoggingMiddleware_geh.getLogger();
 
             var builder = WebApplication.CreateBuilder(args);
