@@ -1,4 +1,3 @@
-using LoggingMiddleware_geh;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LoggingMiddleware_geh_Demo.Controllers
@@ -7,21 +6,21 @@ namespace LoggingMiddleware_geh_Demo.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private LMLogger log = LoggingMiddleware_geh.LoggingMiddleware_geh.getLogger();
-
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-        public WeatherForecastController()
+        private readonly ILogger<WeatherForecastController> _logger;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
+            _logger = logger;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            log.Warn("WF#1");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

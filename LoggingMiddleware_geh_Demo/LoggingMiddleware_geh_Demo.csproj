@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LoggingMiddleware_geh" Version="0.7.11" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\LoggingMiddleware_geh_serilog\LoggingMiddleware_geh_serlilog\LoggingMiddleware_geh_serlilog.csproj" />
   </ItemGroup>
 
 </Project>
